@@ -1,0 +1,3 @@
+#functions which get iformation from specific station
+
+library(rjson)
