@@ -1,3 +1,7 @@
-#functions which get iformation from specific station
+#functions which get information from specific station
 
 library(rjson)
+
+#all trains
+trains<-function(station){
+}
