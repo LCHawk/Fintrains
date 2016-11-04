@@ -4,4 +4,12 @@ library(rjson)
 
 #all trains
 trains<-function(station){
+firstpart<-"http://rata.digitraffic.fi/api/v1/live-trains?station="
+url<-paste0(firstpart,station)
+stationdata<-fromJSON(readLines(url))
+trainNumbers<-c(1:length(stationdata))
+for(i in 1:length(stationdata)){
+  trainNumbers[i]<-stationdata[[i]]$trainNumber
+}
+return(trainNumbers)
 }
