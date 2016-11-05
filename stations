@@ -1,4 +1,4 @@
-#functions which get information from specific station
+#functions which get information from specific station. Station must give using station codes
 
 library(rjson)
 
